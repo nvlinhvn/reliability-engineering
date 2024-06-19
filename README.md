@@ -20,9 +20,9 @@ $T_s$: time to failure of system $S$
 
 Since $A$ and $B$ are independent, the distribution of $T_s$ is the convolution of the distributions of $T_a$ and $T_b$.
 $T_a$ follows an exponential distribution with parameter $r_a$:
-$$f_{T_a}(t) = r_a \exp(-r_a t)$$
+$$f_{T_a}(t) = r_a e^{-r_a t}$$
 $T_b$ follows a piecewise exponential distribution:
-$$f_{T_b}(t) = r_b \exp(-r_b t) (1 - e^{-r_a t}) + 2r_b e^{-2r_b t} e^{-r_a t}$$
+$$f_{T_b}(t) = r_b e^{-r_b t} (1 - e^{-r_a t}) + 2r_b e^{-2r_b t} e^{-r_a t}$$
 The distribution of $T_s$ is the convolution of $f_{T_a}$ and $f_{T_b}$, which does not have a simple closed form.
 
 # Expected value of the overall production until the failure of the system $S$
